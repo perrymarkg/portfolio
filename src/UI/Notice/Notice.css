@@ -1,0 +1,13 @@
+.notice {
+    display:block;
+    width:fit-content;
+    padding:5px 30px;
+    border-radius: 5px;
+    text-align: center;
+    margin:0 auto 30px;
+}
+.notice.error {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}

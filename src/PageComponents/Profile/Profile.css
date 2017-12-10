@@ -1,0 +1,27 @@
+.wrapper.profile {
+    background:#ffffff;
+    color:#000000;
+}
+.wrapper.profile .header {
+    background:#b0002f;
+    position: relative;
+    padding-bottom:60px;
+    margin-bottom:150px;
+}
+.wrapper.profile .container {
+    padding-bottom:30px;
+}
+.profile-image {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    background:grey;
+    border-radius: 50%;
+    margin-bottom:-100px;
+    border:2px solid #ffffff;
+    box-shadow: 1px 1px 1px 3px rgba(0,0,0,.5);
+}
