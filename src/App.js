@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
-import Wrap from './Layout/Wrap';
 import Page from './PageComponents/Page';
 import Home from './PageComponents/Home/Home';
 import Profile from './PageComponents/Profile/Profile';
 import Portfolio from './PageComponents/Portfolio/Portfolio';
 import Resume from './PageComponents/Resume/Resume';
 import Contact from './PageComponents/Contact/Contact';
-import Sidebar from './PageComponents/Sidebar/Sidebar';
-import Nav from './UI/Nav/Nav';
 import Layout from './Layout/Layout';
 import './App.css';
 

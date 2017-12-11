@@ -4,8 +4,17 @@
 }
 .wrapper.portfolio .header {
     background:#006fb0;
-    margin-bottom:0;
+    
 }
+.wrapper.portfolio .container {
+    width: 90%;
+    max-width: 90%;
+}
+.wrapper.portfolio .container .card-lg {
+    margin-bottom:40px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+}
+
 
 .wrapper.portfolio .card-lg .card-content .container{
     padding-top:20px;
@@ -16,4 +25,15 @@
 }
 .wrapper.portfolio .card-lg .card-content p:last-of-type {
     margin-bottom:0;
+}
+
+@media screen and (max-width:768px) {
+    .card-lg h5 {
+        text-align: center;
+        display: block;
+        float:none !important;
+    }
+    .card-lg h5.type {
+        font-weight: normal;
+    }
 }

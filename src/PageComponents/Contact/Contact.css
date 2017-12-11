@@ -65,3 +65,44 @@ ul.social li a.git:after {
 iframe {
     margin-bottom:40px;
 }
+
+@media screen and (max-width:1140px) {
+    .msg-block,
+    .connect-block {
+        width:50%;
+        float:left;
+    }
+    ul.contact li {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin-right:0;
+    }
+    .heck-block {
+        clear:left;
+        padding-top:1px;
+    }
+}
+@media screen and (max-width:800px) {
+    .msg-block,
+    .connect-block {
+        float:none;
+        width: 100%;
+        
+    }
+}
+@media screen and (max-width:640px) {
+    .msg-block,
+    .connect-block,
+    .heck-block {
+        text-align: center;
+    }
+    ul.contact li {
+        text-align: center;
+    }
+}
+@media screen and (max-width:480px) {
+    .wrapper.contact h1 span {
+        display:none;
+    }
+}

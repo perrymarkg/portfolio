@@ -125,3 +125,40 @@
     line-height: 40px;
   }
   
+@media screen and (max-width:640px) {
+  .sidebar {
+      position: relative;
+      width: 100%;
+      height: auto;
+      top:auto;
+      left:auto;
+      margin:0;
+  }
+  .sidebar nav ul {
+      border-top:none;
+  }
+  .sidebar nav li:first-child {
+      display: none;
+  }
+  .sidebar nav li {
+      display: inline-block;
+      width: 25%;
+      position: relative;
+      border-top:none;
+      border-right:1px solid #111;
+      border-lefT:1px solid #444;
+  }
+  .sidebar nav a span.text {
+    display: none;
+  }
+  .sidebar nav a {
+    height:60px;
+  }
+  .sidebar nav a.active .animate, 
+  .sidebar nav a:hover .animate {
+    transform: translateZ(-25px) rotateX(-90deg);
+  }
+  .sidebar nav a .animate .front {
+    transform: rotateY(0deg) translateZ(30px);
+  }
+}

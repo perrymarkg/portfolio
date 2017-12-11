@@ -2,6 +2,7 @@
     width:100%;
     padding:0;
     position: relative;
+    
 }
 .card-lg:hover {
     cursor: pointer;
@@ -21,6 +22,7 @@
     background-image: -ms-linear-gradient(top, #0487d9, #006fb0);
     background-image: -o-linear-gradient(top, #0487d9, #006fb0);
     background-image: linear-gradient(to bottom, #0487d9, #006fb0);
+    background-image: url('../../Assets/Images/portfolio-header.png');
     padding:20px 0;
 }
 .card-lg .bar:after {
@@ -40,12 +42,11 @@
     float:right;
 }
 .card-lg .card-content {
-    min-height: 300px;
+    min-height: 370px;
     padding:20px 0;
     opacity: 0;
     transition: 0.3s;
-    position: relative;
-    background-size:cover;
+    position: relative;    
     color:#000000;
     overflow: hidden;
 }
@@ -62,6 +63,9 @@
     transition-property: transform;
     transition-duration: 0.3s;
     filter: blur(5px);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 .card-lg .card-content .bg-overlay::before {
     display: block;
@@ -71,7 +75,8 @@
     height: 100%;
     top:0;
     left:0;
-    background:rgba(255,255,255, 0.5)
+    background:rgba(255,255,255, 0.8);
+    
 }
 .card-lg:hover .card-content .bg-overlay {
     transform: scaleY(1);
