@@ -13,6 +13,7 @@ const Profile = (props) => (
             <div className="profile-image"><img src={profile} alt="Profile"/></div>
         </div>
         <div className="container">
+        <h2 className="title">Perry Mark Guinjicna</h2>
         <p>A web developer based in Baguio City, Philippines with a Bachelor's degree in Information Technology.</p>
         
         <p>I have worked with various companies over the course of my six year career on a multitude of web based projects using web technologies such as PHP, MySQL, HTML, CSS, Javascript and jQuery. My area of expertise is in Back-End development with some skills in Front-End development that I have used in working on platforms such as Wordpress, Woocommerce, CodeIgniter and Magento 2.</p>

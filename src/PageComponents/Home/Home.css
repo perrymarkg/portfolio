@@ -121,7 +121,10 @@
         padding:10px 20px;
     }
 }
-@media screen and (max-width:640px) {
+@media screen and (max-width:640px), screen and (max-height:480px) {
+    .wrapper.home {
+        padding-bottom:200px;
+    }
     .nav-instructions {
         display: block;
         text-align: center;

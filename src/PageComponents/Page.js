@@ -6,9 +6,9 @@ const Page = (props) => {
     if( (!props.activePage && props.class === "home") || ( props.activePage === props.class ) )
         classes.push('active')
     
-
     return (
         <div className={classes.join(' ')}>
+            {props.render}
             {props.children}
         </div>
     )

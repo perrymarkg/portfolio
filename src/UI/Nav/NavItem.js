@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Wrap from '../../Layout/Wrap';
 
 
@@ -48,12 +49,16 @@ const NavItem = (props) => {
         content = <span className="text">{props.text}</span>
 
     return (
+        <li><NavLink to={props.text.toLowerCase()} className={[target, active].join(' ')} onClick={ (e) => props.clicked(e, target) }>{content}</NavLink></li>        
+    )
+
+    /* return (
         <li>
             <a href={props.text} className={[target, active].join(' ')} onClick={ (e) => props.clicked(e, target) }>
                 {content}
             </a>
         </li>
-    )
+    ) */
 }
     
 

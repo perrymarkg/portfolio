@@ -125,9 +125,9 @@
     line-height: 40px;
   }
   
-@media screen and (max-width:640px) {
+@media screen and (max-width:640px), screen and (max-height:480px) {
   .sidebar {
-      position: relative;
+      position: fixed;
       width: 100%;
       height: auto;
       top:auto;
