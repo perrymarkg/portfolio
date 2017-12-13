@@ -1,10 +1,10 @@
 import React from 'react';
 import Nav from '../../UI/Nav/Nav';
-import Wrap from '../../Layout/Wrap';
+import Page from '../../PageComponents/Page';
 import './Home.css'
 
 const Home = (props) => (
-    <Wrap>
+    <Page {...props}>
     <div className="nav-instructions">
         <span className="fa fa-chevron-up"></span>
         <p>Click an item to view</p>
@@ -18,7 +18,7 @@ const Home = (props) => (
 
         <Nav itemClicked={props.navClickHandler}/>
     </div>
-    </Wrap>
+    </Page>
 );
 
 export default Home;

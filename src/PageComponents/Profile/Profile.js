@@ -1,11 +1,11 @@
 import React from 'react';
-import Wrap from '../../Layout/Wrap';
+import Page from '../../PageComponents/Page';
 import profile from '../../Assets/Images/profile.jpg';
 
 import './Profile.css'
 
 const Profile = (props) => (
-    <Wrap>
+    <Page {...props} >
         <div className="header">
             <div className="container">
                 <h1>About Me</h1>
@@ -23,7 +23,7 @@ const Profile = (props) => (
         <p>At present I am currently employed with Zeald as a Back-End web developer and I am also open for exciting opportunties.</p>
         
         </div>
-    </Wrap>
+    </Page>
 )
 
 export default Profile;

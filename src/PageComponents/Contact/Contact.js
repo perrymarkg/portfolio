@@ -1,9 +1,9 @@
 import React from 'react';
-import Wrap from '../../Layout/Wrap';
+import Page from '../../PageComponents/Page';
 import './Contact.css'
 
 const Contact = (props) => (
-    <Wrap>
+    <Page {...props} >
         <div className="header">
             <h1>Contact <span>Information</span></h1>
         </div>
@@ -59,7 +59,7 @@ const Contact = (props) => (
             <iframe src="https://www.google.com/maps/d/embed?mid=1JhQVBXOaZJsm8XgQ1jOEexYLGMgit5Z8&hl=en" width="100%" height="480" title="My Location"></iframe>
             </div>
         </div>
-    </Wrap>
+    </Page>
 )
 
 export default Contact;

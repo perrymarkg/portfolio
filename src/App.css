@@ -24,7 +24,7 @@ a {
   z-index:5;
   padding-left:150px;
   left:100%;
-  transition: 0.3s;
+  animation:0.3s customSlide ease-in-out;
 }
 .wrapper.active {
   left:0;
@@ -52,13 +52,23 @@ a {
   z-index:5;
   
 }
-.wrapper > .container {
-  background-image: url('./Assets/Images/content-bg.png') !important;
-}
+
 .wrapper .container.full {
   width:100%;
   max-width: 100%;
   padding:0;
+}
+@keyframes customSlide {
+  0% {
+    opacity: 0;
+    margin-left:-30%;
+  }
+  
+  100%{
+    
+    opacity: 1;
+    margin-right:0;
+  }
 }
 
 

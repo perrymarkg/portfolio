@@ -6,6 +6,8 @@ import Wrap from '../../Layout/Wrap';
 const NavItem = (props) => {
     const target = props.text === "Back" ? null : props.text.toLowerCase();
     const active = props.activePage === target ? "active" : "";
+    const pathTo = props.text !== "Back" ? '/' +props.text.toLowerCase() : '/';
+
     let content;
     if( props.icon ) {
         let iconClass;
@@ -49,7 +51,7 @@ const NavItem = (props) => {
         content = <span className="text">{props.text}</span>
 
     return (
-        <li><NavLink to={props.text.toLowerCase()} className={[target, active].join(' ')} onClick={ (e) => props.clicked(e, target) }>{content}</NavLink></li>        
+        <li><NavLink to={pathTo} exact className={[target, active].join(' ')} >{content}</NavLink></li>        
     )
 
     /* return (

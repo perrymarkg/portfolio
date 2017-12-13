@@ -1,5 +1,5 @@
 import React from 'react';
-import Wrap from '../../Layout/Wrap';
+import Page from '../../PageComponents/Page';
 import LargeCard from '../../UI/LargeCards/LargeCard';
 import './Portfolio.css'
 
@@ -13,7 +13,7 @@ import csv from '../../Assets/Images/csv.jpg';
 import navbg from '../../Assets/Images/nav.jpg';
 
 const Portfolio = (props) => (
-    <Wrap>
+    <Page {...props}>
         <div className="header">
             <h1>My Works</h1>
         </div>
@@ -56,7 +56,7 @@ const Portfolio = (props) => (
                 <p>Looking forward to use this on my next project.</p>
             </LargeCard>
         </div>
-    </Wrap>
+    </Page>
 )
 
 export default Portfolio;
