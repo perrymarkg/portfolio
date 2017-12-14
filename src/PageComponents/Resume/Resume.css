@@ -26,3 +26,21 @@
 .wrapper.resume .download a .fa {
     margin-right:10px;
 }
+
+.wrapper.resume h3 {
+    padding-bottom:30px;
+}
+
+ul.skills li {
+    display: inline-block;
+    width:48%;
+    font-size:0;
+    margin-right:2%;
+    margin-bottom:20px;
+}
+ul.skills li:nth-child(2n){
+    margin-right:0;
+}
+ul.skills li strong {
+    font-family: 'Oswald', sans-serif;  
+}

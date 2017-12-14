@@ -4,17 +4,20 @@
 .wrapper.home {
     background:#000000 url('../../Assets/Images/main.jpg') center no-repeat;
     background-size: cover;
-    color:#ffffff;
+    
     padding-left:0;
     text-align: center;
-
 }
 .wrapper.home > .container {
     height:100%;
     padding-top:13%;
     background-image:none !important;
+    color:#ffffff;
 }
-
+.wrapper.home h1, 
+.wrapper.home h4 {
+    color:#ffffff;
+}
 .wrapper.home .bar-title {
     width:100%;
     position: relative;
@@ -130,6 +133,10 @@
         text-align: center;
         padding-top:20px;
         position: relative;
+        color:#ffffff;
+    }
+    .nav-instructions p {
+        color:#ffffff;
     }
     .nav-instructions span {
         animation: 2s bounce infinite;

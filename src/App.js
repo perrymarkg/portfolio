@@ -66,10 +66,10 @@ class App extends Component {
       <Layout activePage={this.state.activePage} itemClicked={this.navClickHandler}>
         <Switch>
         <Route path="/" exact render={() => (<Home class="home"/>)}  />
-        <Route path="/profile" render={(routeProps) => (<Profile class="profile" {...routeProps}/>)}  />
-        <Route path="/portfolio" render={(routeProps) => (<Portfolio class="portfolio" {...routeProps}/>)}  />
-        <Route path="/resume" render={(routeProps) => (<Resume class="resume" {...routeProps}/>)}  />
-        <Route path="/contact" render={(routeProps) => (<Contact class="contact" {...routeProps}/>)}  />
+        <Route path="/profile" exact render={(routeProps) => (<Profile class="profile" {...routeProps}/>)}  />
+        <Route path="/portfolio" exact render={(routeProps) => (<Portfolio class="portfolio" {...routeProps}/>)}  />
+        <Route path="/resume" exact render={(routeProps) => (<Resume class="resume" {...routeProps}/>)}  />
+        <Route path="/contact" exact render={(routeProps) => (<Contact class="contact" {...routeProps}/>)}  />
         <Route path="/:string" render={(routeProps) => (<Error class="error"  {...routeProps}/>)}  />
         </Switch>
       </Layout>

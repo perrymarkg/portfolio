@@ -11,3 +11,6 @@
     background-color: #f2dede;
     border-color: #ebccd1;
 }
+.notice.error p {
+    margin:0;
+}

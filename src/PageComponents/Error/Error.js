@@ -1,5 +1,6 @@
 import React from 'react';
 import Page from '../../PageComponents/Page';
+import Notice from '../../UI/Notice/Notice';
 import './Error.css';
 
 const Error = (props) => {
@@ -16,7 +17,7 @@ const Error = (props) => {
     <Page class={props.class}>
         <div className="container">
             <h2><span className="fa fa-exclamation-triangle"></span> Page Not FOund!</h2>
-            <p>{initial}</p>
+            <Notice type="error"><p>{initial}</p></Notice>
             <p>{btoa(text)}</p>
         </div>
     </Page>

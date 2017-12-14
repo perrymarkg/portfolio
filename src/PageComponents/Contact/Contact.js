@@ -55,7 +55,7 @@ const Contact = (props) => (
             </ul>
             </div>
             <div className="heck-block">
-            <h4>Where the heck am I?</h4>
+            <h4>My Location</h4>
             <iframe src="https://www.google.com/maps/d/embed?mid=1JhQVBXOaZJsm8XgQ1jOEexYLGMgit5Z8&hl=en" width="100%" height="480" title="My Location"></iframe>
             </div>
         </div>
