@@ -9,7 +9,7 @@ const Contact = (props) => (
         </div>
         <div className="container">
             <div className="msg-block">
-            <h4>Drop me a message:</h4>
+            <h3>Drop me a message:</h3>
             <ul className="contact">
                 <li>
                     <a href="mailto:pmgd2nd@gmail.com" target="_blank" rel="noopener noreferrer">
@@ -31,8 +31,9 @@ const Contact = (props) => (
                 </li>
             </ul>
             </div>
+            <hr/>
             <div className="connect-block">            
-            <h4>Or connect via:</h4>
+            <h3>Or connect via:</h3>
             <ul className="contact social">
                 <li>
                     <a href="https://www.facebook.com/tipzee89" target="_blank" rel="noopener noreferrer" className="fb">
@@ -54,8 +55,9 @@ const Contact = (props) => (
                 </li>
             </ul>
             </div>
+            <hr/>
             <div className="heck-block">
-            <h4>My Location</h4>
+            <h3>My Location</h3>
             <iframe src="https://www.google.com/maps/d/embed?mid=1JhQVBXOaZJsm8XgQ1jOEexYLGMgit5Z8&hl=en" width="100%" height="480" title="My Location"></iframe>
             </div>
         </div>

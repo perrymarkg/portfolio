@@ -20,9 +20,7 @@
     border-bottom:3px solid #039438;
     transition:0.3s;
 }
-.wrapper.resume .download a:hover {
-    margin-top: -5px;
-}
+
 .wrapper.resume .download a .fa {
     margin-right:10px;
 }
@@ -30,17 +28,34 @@
 .wrapper.resume h3 {
     padding-bottom:30px;
 }
-
 ul.skills li {
     display: inline-block;
     width:48%;
     font-size:0;
     margin-right:2%;
-    margin-bottom:20px;
+    margin-bottom:2%;
 }
 ul.skills li:nth-child(2n){
     margin-right:0;
 }
 ul.skills li strong {
     font-family: 'Oswald', sans-serif;  
+}
+.wrapper.resume .rating .level {
+    background:#039438;
+}
+.timeline:before {
+    background:#039438;
+}
+.timeline-item .dot {
+    background:#039438;
+}
+.timeline-item .timeline-content .t-year strong {
+    background:#039438;
+}
+.timeline-item .timeline-content .t-year strong:after {
+    border-top:15px solid #039438;
+}
+.resume-block .download {
+    padding-bottom:30px;
 }

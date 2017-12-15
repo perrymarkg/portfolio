@@ -21,24 +21,28 @@ const Portfolio = (props) => (
             <LargeCard title="www.takeaway101.co.nz" url="http://www.takeaway101.co.nz" type="Wordpress/Woocommerce" bgImage={takeaway}>
                 <p><strong>Employment: </strong> Zeald</p>
 
-                <p><strong>Work: </strong> Layout conversion, Plugin integration, Custom Plugin solution.</p>
+                <p><strong>Work: </strong> Back-End and Front-End Development.<br/>
+                Custom plugin development and integration with woocommerce. UI implementation. PSD to Layout Conversion</p>
                 <p>Check it out! try to type in "Tauranga" on the search field</p>
             </LargeCard>
             <LargeCard title="www.plassurg.co.nz" url="http://www.plassurg.co.nz" type="Wordpress" bgImage={plassurg}>
                 <p><strong>Employment: </strong> Zeald</p>
 
-                <p><strong>Work: </strong> Layout conversion, Plugin integration, Custom Plugin solution.</p>
+                <p><strong>Work: </strong> Back-End and Front-End Development. <br/>
+                Custom plugin development. UI implementation. PSD to Layout Conversion</p>
             </LargeCard>
             <LargeCard title="www.peakpilatesgroup.co.nz" url="http://www.peakpilatesgroup.co.nz" type="Wordpress" bgImage={peak}>
                 <p><strong>Employment: </strong> Zeald</p>
 
-                <p><strong>Work: </strong> Layout conversion, Plugin integration, Custom Plugin solution.</p>
+                <p><strong>Work: </strong> Back-End and Front-End Development. <br/>
+                Layout conversion, Plugin integration, Custom Plugin solution.</p>
                 
             </LargeCard>
             <LargeCard title="www.radiotainui.co.nz" url="http://www.radiotainui.co.nz" type="Wordpress" bgImage={radio}>
                 <p><strong>Employment: </strong> Zeald</p>
             
-                <p><strong>Work: </strong> Layout conversion, Custom Plugin solution, API Integration.</p>
+                <p><strong>Work: </strong> Back-End and Front-End Development <br/>
+                Layout conversion, Custom Plugin solution, API Integration.</p>
             </LargeCard>
             <LargeCard title="www.applianceplus.co.nz" url="http://www.applianceplus.co.nz" type="Magento 2" bgImage={appplus}>
                 <p><strong>Employment: </strong> Zeald</p>

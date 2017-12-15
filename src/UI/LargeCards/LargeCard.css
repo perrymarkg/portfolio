@@ -2,7 +2,7 @@
     width:100%;
     padding:0;
     position: relative;
-    
+    box-shadow: 1px 20px 1px -10px rgba(0,0,0,.2);
 }
 .card-lg:hover {
     cursor: pointer;
@@ -76,11 +76,14 @@
     top:0;
     left:0;
     background:rgba(255,255,255, 0.8);
-    
 }
 .card-lg:hover .card-content .bg-overlay {
     transform: scaleY(1);
 }
 .card-lg:hover .card-content {
     opacity: 1;
+}
+.card-bg {
+    border:1px solid #ccc;
+    border-top:none;
 }

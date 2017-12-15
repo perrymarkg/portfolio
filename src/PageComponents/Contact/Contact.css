@@ -5,10 +5,10 @@
 .wrapper.contact .header {
     background:#c26a18;
 }
-.wrapper.contact h4 {
+.wrapper.contact h3 {
     padding:30px 0;
 }
-.msg-block:first-child h4 {
+.msg-block:first-child h3 {
     padding-top:0;
 }
 ul.contact {
@@ -73,6 +73,12 @@ iframe {
 }
 
 @media screen and (max-width:1140px) {
+    .wrapper.contact hr {
+        display: none;
+    }
+    .wrapper.contact h3 {
+        padding-top:0;
+    }
     .msg-block,
     .connect-block {
         width:50%;
@@ -89,15 +95,21 @@ iframe {
         padding-top:1px;
     }
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width:980px) {
+    .wrapper.contact h3 {
+        padding-top:30px;
+    }
     .msg-block,
     .connect-block {
         float:none;
         width: 100%;
-        
+    }
+    .wrapper.contact hr {
+        display: block;
     }
 }
 @media screen and (max-width:640px) {
+    
     .msg-block,
     .connect-block,
     .heck-block {

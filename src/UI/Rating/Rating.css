@@ -1,5 +1,6 @@
 .rating {
     width:100%;
+    box-shadow: 0 15px 2px -10px rgba(0,0,0,.2);
 }
 .rating .bar {
     height:15px;
@@ -11,9 +12,11 @@
     display:block;
     content:'';
     height: 100%;
-    background:#555;
+    background:#aaa;
 }
 .rating strong {
+    display: block;
     font-size:16px;
+    margin-bottom:3px;
     text-transform: uppercase;
 }
