@@ -62,7 +62,7 @@ improve my skills in the field of web technologies</p>
                     <h3>Education</h3>
                     <p>University of the Cordilleras <br/>
                     Bachelor of Science in Information Technology <br/>
-                    (2011)</p>
+                    Graduated - 2011</p>
                 </div>
                 <hr/>
                 <div className="resume-block">
