@@ -46,6 +46,7 @@
   .sidebar nav a.active .animate,
   .sidebar nav a:hover .animate {
     transform: translateZ(-100px) rotateY(-90deg);
+    -ms-transform: translateZ(-100px) rotateY(-90deg);
   }
   .sidebar nav a .animate div {
     position: absolute;
@@ -56,20 +57,46 @@
   
   .sidebar nav a .animate .front {
     transform: rotateY(0deg) translateZ(-75px);
+    -ms-transform: rotateY(0deg) translateZ(-75px);
   }
   .sidebar nav a .animate .back {
     transform: rotateY(90deg) translateZ(-75px);
-    opacity: 0;
+    -ms-transform: rotateY(90deg) translateZ(-75px);
+    opacity: 1;
   }
   .sidebar nav a.active .animate .back,
   .sidebar nav a:hover .animate .back {
     opacity: 1;
   }
- 
-  /* .sidebar nav a div {
-      height:90px;
-      padding:10px 0 15px;
-  } */
+
+  .sidebar.isIE-no3d nav a .animate {
+    transform-style:initial;
+    overflow: hidden;
+  }
+  .sidebar.isIE-no3d nav a.active .animate,
+  .sidebar.isIE-no3d nav a:hover .animate {
+    transform: none;
+  }
+  .sidebar.isIE-no3d nav a .animate .front {
+      transform: none;      
+      transition: 0.3s;
+      left:0;
+  }
+  .sidebar.isIE-no3d nav a .animate .back {
+      transform: none;
+      right:100%;
+      transition: 0.3s;
+  }
+  .sidebar.isIE-no3d nav a.active .animate .back,
+  .sidebar.isIE-no3d nav a:hover .animate .back {
+      transform: none;
+      right:0;
+  }
+  .sidebar.isIE-no3d nav a.active .animate .front,
+  .sidebar.isIE-no3d nav a:hover .animate .front {
+    left:100%;
+  }
+  
   .sidebar nav a div.front {
     background:#333333;
   }
@@ -167,5 +194,33 @@
   .sidebar nav a .animate .back {
     transform: rotateY(0deg) rotateX(90deg) translateZ(35px);
     opacity: 0;
+  }
+
+  .sidebar nav a.active .animate,
+  .sidebar nav a:hover .animate {
+    transform: none;
+  }
+  .sidebar.isIE-no3d nav a .animate .front {
+    transform: none;      
+    transition: 0.3s;
+    left:auto;
+    top:0;
+  }
+  .sidebar.isIE-no3d nav a .animate .back {
+    transform: none;
+    right:auto;
+    top:-100%;
+    transition: 0.3s;
+  }
+  .sidebar.isIE-no3d nav a.active .animate .back,
+  .sidebar.isIE-no3d nav a:hover .animate .back {
+    transform: none;
+    right:auto;
+    top:0;
+  }
+  .sidebar.isIE-no3d nav a.active .animate .front,
+  .sidebar.isIE-no3d nav a:hover .animate .front {
+    left:auto;
+    top:100%;
   }
 }

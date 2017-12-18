@@ -40,9 +40,9 @@
     right:0;
 }
 .wrapper.home .bar-title h4 {
-    display:block;
+    display:inline-block;
     position: relative;
-    width:fit-content;
+
     margin:0 auto;
     padding:0 20px;
     border-left:1px solid #ffffff;
