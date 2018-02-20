@@ -15,9 +15,9 @@ const LargeCard = (props) => {
                 </div>
                 <div className="card-bg" style={{backgroundImage: "url("+props.bgImage+")"}}>
                     <div className="card-content" >
-                        <div className="container">
-                            {props.children}
-                        </div>
+                        <div className="container" dangerouslySetInnerHTML={{__html: props.children}} />
+                            
+                        
                         <div className="bg-overlay" style={{backgroundImage:"url("+props.bgImage+")"}}></div>
                     </div>
                 </div>

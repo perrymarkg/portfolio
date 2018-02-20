@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch, withRouter } from 'react-router-dom'
-
+import axios from 'axios';
 
 import Home from './PageComponents/Home/Home';
 import Profile from './PageComponents/Profile/Profile';
@@ -19,12 +19,25 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state= {
-      activePage: null
+      activePage: null,
+      portfolio: [],
+      skills: [],
+      employment: [],
+      pdf:''
     };  
   }
 
   componentDidMount(){
     this.setTitle(this.props.location.pathname);
+
+    axios.get('/portfolio.json').then( response => {
+      this.setState({
+        portfolio: response.data.portfolio, 
+        skills: response.data.resume.skills,
+        employment: response.data.resume.employment,
+        pdf: response.data.resume.pdf
+      })
+    })
   }
 
   componentWillUpdate(nextProps){
@@ -62,13 +75,14 @@ class App extends Component {
   }
 
   render() {
+    
     return (
       <Layout activePage={this.state.activePage} itemClicked={this.navClickHandler}>
         <Switch>
         <Route path="/" exact render={() => (<Home class="home"/>)}  />
         <Route path="/profile" exact render={(routeProps) => (<Profile class="profile" {...routeProps}/>)}  />
-        <Route path="/portfolio" exact render={(routeProps) => (<Portfolio class="portfolio" {...routeProps}/>)}  />
-        <Route path="/resume" exact render={(routeProps) => (<Resume class="resume" {...routeProps}/>)}  />
+        <Route path="/portfolio" exact render={(routeProps) => (<Portfolio class="portfolio" {...routeProps} portfolio={this.state.portfolio} />)}  />
+        <Route path="/resume" exact render={(routeProps) => (<Resume class="resume" {...routeProps} skills={this.state.skills} employment={this.state.employment} pdf={this.state.pdf} />)}  />
         <Route path="/contact" exact render={(routeProps) => (<Contact class="contact" {...routeProps}/>)}  />
         <Route path="/:string" render={(routeProps) => (<Error class="error"  {...routeProps}/>)}  />
         </Switch>

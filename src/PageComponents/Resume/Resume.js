@@ -6,32 +6,10 @@ import Timeline from '../../UI/Timeline/Timeline';
 import './Resume.css'
 
 const Resume = (props) => {
+    const skills = props.skills.map( (item, index) => {
+        return <li key={index}><Rating title={item.name} level={item.level}  /></li>
+    })
     
-    const skills = [
-        ["PHP", 68],
-        ["MySQL", 68],
-        ["HTML", 78],
-        ["CSS/CSS3", 78],
-        ["Javascript", 58],
-        ["jQuery", 68],
-        ["Wordpress", 80],
-        ["Woocommerce", 70],
-        ["CodeIgniter", 60],
-        ["Magento 2", 45],
-        ["Shopify", 22],
-        ["ReactJS", 30]
-    ].map( (val, index) => {
-        return <li key={index}><Rating title={val[0]} level={val[1]}  /></li>
-    });
-
-    const employment = [
-        ["August 2015 - Present", <Wrap><p>Zeald (Homebased)</p><p>Back End Developer</p></Wrap>],
-        ["February 2013 – March 2015", <Wrap><p>BlackhouseIT</p><p>Senior Web Developer</p></Wrap>],
-        ["December 2012 – August 2013", <Wrap>Freelance Web Developer</Wrap>],
-        ["January 2012- August 2012", <Wrap><p>Atissoftware</p><p>Junior Web Developer</p></Wrap>],
-        ["September 2011 – July 2012", <Wrap><p>Webdefines (Part-Time)</p><p>Junior Web Developer</p></Wrap>]
-    ]
-        
     return (
     <Page {...props} >
         <div className="header">
@@ -55,7 +33,7 @@ improve my skills in the field of web technologies</p>
                 <hr/>
                 <div className="resume-block">
                     <h3>Employment History</h3>
-                    <Timeline items={employment} />
+                    <Timeline items={props.employment} />
                 </div>
                 <hr/>
                 <div className="resume-block">
@@ -69,7 +47,7 @@ improve my skills in the field of web technologies</p>
                     
                     <div className="download">
                     <p>Please download the PDF version for more details.</p>
-                    <a href="https://drive.google.com/open?id=1gikH83gHNSNz6kXjLioun7EGzeEX80n9" target="_blank" rel="noopener noreferrer"><span className="fa fa-download"></span><span className="text">download</span></a>
+                    <a href={props.pdf} target="_blank" rel="noopener noreferrer"><span className="fa fa-download"></span><span className="text">download</span></a>
                     </div>
                 </div>
                 </Wrap>

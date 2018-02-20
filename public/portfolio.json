@@ -1,0 +1,139 @@
+{
+    "portfolio": [
+        {
+            "title": "www.takeaway101.co.nz",
+            "url": "http://www.takeaway101.co.nz",
+            "type": "Wordpress/Woocommerce",
+            "bgImage": "takeaway.jpg",
+            "content": "<p><strong>Employment: </strong> Zeald</p><p><strong>Work: </strong> Back-End and Front-End Development.<br/>Custom plugin development and integration with woocommerce. UI implementation. PSD to Layout Conversion</p><p>Check it out! try to type in \"Tauranga\" on the search field</p>"
+        },
+        {
+            "title": "www.plassurg.co.nz",
+            "url": "http://www.plassurg.co.nz",
+            "type": "Wordpress",
+            "bgImage": "plassurg.jpg",
+            "content": "<p><strong>Employment: </strong> Zeald</p><p><strong>Work: </strong> Back-End and Front-End Development. <br/>Custom plugin development. UI implementation. PSD to Layout Conversion</p>"
+        },
+        {
+            "title": "www.peakpilatesgroup.co.nz",
+            "url": "http://www.peakpilatesgroup.co.nz",
+            "type": "Wordpress",
+            "bgImage": "peak.jpg",
+            "content": "<p><strong>Employment: </strong> Zeald</p><p><strong>Work: </strong> Back-End and Front-End Development. <br/>Layout conversion, Plugin integration, Custom Plugin solution.</p>"
+        },
+        {
+            "title": "www.radiotainui.co.nz",
+            "url": "http://www.radiotainui.co.nz",
+            "type": "Wordpress",
+            "bgImage": "radio.jpg",
+            "content": "<p><strong>Employment: </strong> Zeald</p><p><strong>Work: </strong> Back-End and Front-End Development <br/>Layout conversion, Custom Plugin solution, API Integration.</p>"
+        },
+        {
+            "title": "www.applianceplus.co.nz",
+            "url": "http://www.applianceplus.co.nz",
+            "type": "Magento 2",
+            "bgImage": "app.jpg",
+            "content": "<p><strong>Employment: </strong> Zeald</p><p><strong>Work: </strong> Website transfer, Plugin setup and system upgrades, Layout improvements.</p>"
+        },
+        {
+            "title": "Reviews Importer for Magento 2",
+            "url": "https://github.com/perrymarkg/m2-reviews-importer",
+            "type": "Personal",
+            "bgImage": "m2.jpg",
+            "content": "<p>A Reviews Importer project I made for Magento 2 which allows import of product reviews from the admin panel.</p>"
+        },
+        {
+            "title": "CSV Reader/Write",
+            "url": "https://github.com/perrymarkg/simplecsv",
+            "type": "Personal",
+            "bgImage": "csv.jpg",
+            "content": "<p>A personal project I made that converts a nested array or a flat array containing a parent and child relation to nested list. Primarily used to create menu navigation and even list items.</p><p>Looking forward to use this on my next project.</p>"
+        },
+        {
+            "title": "Angular Match Game",
+            "url": "https://perrymarkg.github.io/playground/angular-match-game/",
+            "type": "Personal",
+            "bgImage": "angular-match-game.jpg",
+            "content": "<p>Fun project I made while learning to use Angular</p>"
+        }
+    ],
+    "resume": {
+        "skills":[
+            {
+                "name": "php",
+                "level": "68"
+            },
+            {
+                "name": "mysql",
+                "level": "68"
+            },
+            {
+                "name": "html",
+                "level": "78"
+            },
+            {
+                "name": "css",
+                "level": "78"
+            },
+            {
+                "name": "javascript",
+                "level": "58"
+            },
+            {
+                "name": "jQuery",
+                "level": "68"
+            },
+            {
+                "name": "Wordpress",
+                "level": "80"
+            },
+            {
+                "name": "Woocommerce",
+                "level": "70"
+            },
+            {
+                "name": "CodeIgniter",
+                "level": "60"
+            },
+            {
+                "name": "Magento 2",
+                "level": "45"
+            },
+            {
+                "name": "Shopify",
+                "level": "19"
+            },
+            {
+                "name": "ReactJS",
+                "level": "25"
+            },
+            {
+                "name": "Angular 4",
+                "level": "30"
+            }
+        ],
+        "employment":[
+            {
+                "title": "August 2015 - February 2018",
+                "content": "<p>Zeald (Homebased)</p><p>Back End Developer</p>"
+            },
+            {
+                "title": "February 2013 – March 2015",
+                "content": "<p>BlackhouseIT</p><p>Senior Web Developer</p>"
+            },
+            {
+                "title": "December 2012 – August 2013",
+                "content": "Freelance Web Developer"
+            },
+            {
+                "title": "January 2012- August 2012",
+                "content": "<p>Atissoftware</p><p>Junior Web Developer</p>"
+            },
+            {
+                "title": "September 2011 – July 2012",
+                "content": "<p>Webdefines (Part-Time)</p><p>Junior Web Developer</p>"
+            }
+        ],
+        "pdf":"https://drive.google.com/open?id=17isIMaWxrvnE6P8qM8eBQo2znAySVjp8"
+    }
+}

@@ -3,7 +3,7 @@ import Page from '../../PageComponents/Page';
 import LargeCard from '../../UI/LargeCards/LargeCard';
 import './Portfolio.css'
 
-import takeaway from '../../Assets/Images/takeaway.jpg';
+/* import takeaway from '../../Assets/Images/takeaway.jpg';
 import plassurg from '../../Assets/Images/plassurg.jpg';
 import peak from '../../Assets/Images/peak.jpg';
 import radio from '../../Assets/Images/radio.jpg';
@@ -11,14 +11,24 @@ import appplus from '../../Assets/Images/app.jpg';
 import m2 from '../../Assets/Images/m2.jpg';
 import csv from '../../Assets/Images/csv.jpg';
 import navbg from '../../Assets/Images/nav.jpg';
+import angularBg from '../../Assets/Images/angular-match-game.jpg'; */
 
-const Portfolio = (props) => (
-    <Page {...props}>
+const Portfolio = (props) => {
+
+    const items = props.portfolio.map( (item, index) => {
+        return <LargeCard title={item.title} url={item.url} type={item.type} bgImage={"/assets/" + item.bgImage} key={index}>
+            {item.content}
+        </LargeCard>
+    })
+    
+    return (
+        <Page {...props}>
         <div className="header">
             <h1>My Works</h1>
         </div>
         <div className="container">
-            <LargeCard title="www.takeaway101.co.nz" url="http://www.takeaway101.co.nz" type="Wordpress/Woocommerce" bgImage={takeaway}>
+            {items}
+            {/* <LargeCard title="www.takeaway101.co.nz" url="http://www.takeaway101.co.nz" type="Wordpress/Woocommerce" bgImage={takeaway}>
                 <p><strong>Employment: </strong> Zeald</p>
 
                 <p><strong>Work: </strong> Back-End and Front-End Development.<br/>
@@ -59,8 +69,15 @@ const Portfolio = (props) => (
                 <p>A personal project I made that converts a nested array or a flat array containing a parent and child relation to nested list. Primarily used to create menu navigation and even list items.</p>
                 <p>Looking forward to use this on my next project.</p>
             </LargeCard>
+            <LargeCard title="Angular Match Game" url="https://perrymarkg.github.io/playground/angular-match-game/" type="Personal" bgImage={angularBg}>
+                <p>Fun project I made while learning to use Angular</p>
+            </LargeCard> */}
         </div>
-    </Page>
-)
+        </Page>
+    )
+}
+    
+    
+
 
 export default Portfolio;

@@ -7,10 +7,8 @@ const TimelineItem = (props) => (
             <div className="dot"></div>
             <div className="timeline-filler"></div>
             <div className="timeline-content">
-                <div className="t-year"><strong>{props.year}</strong></div>
-                <div className="t-desc">
-                    {props.desc}
-                </div>
+                <div className="t-year"><strong>{props.title}</strong></div>
+                <div className="t-desc" dangerouslySetInnerHTML={{__html: props.content}} />                
             </div>
         </div>
     </Wrap>
